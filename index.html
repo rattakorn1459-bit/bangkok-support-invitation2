@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangkok Support - Discord Bot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background-animation"></div>
+        
+        <div class="content">
+            <!-- Header -->
+            <div class="header">
+                <div class="logo-section">
+                    <div class="logo">🤖</div>
+                    <h1>Bangkok Support</h1>
+                </div>
+                <p class="subtitle">Discord Bot สนับสนุนชุมชนของคุณ</p>
+            </div>
+
+            <!-- Main Card -->
+            <div class="main-card">
+                <div class="card-content">
+                    <h2>ยินดีต้อนรับ!</h2>
+                    <p class="description">
+                        Bangkok Support คือ Discord Bot ที่ช่วยให้คุณบริหารจัดการเซิร์ฟเวอร์ได้ดีขึ้น
+                    </p>
+
+                    <!-- Features -->
+                    <div class="features">
+                        <div class="feature">
+                            <span class="feature-icon">🛡️</span>
+                            <span class="feature-text">ระบบโมเดเรชัน</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">💬</span>
+                            <span class="feature-text">ระบบสนับสนุน</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">⚡</span>
+                            <span class="feature-text">ประสิทธิภาพสูง</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🎯</span>
+                            <span class="feature-text">ง่ายต่อการใช้</span>
+                        </div>
+                    </div>
+
+                    <!-- Invite Link Section -->
+                    <div class="invite-section">
+                        <h3>เชิญบอทเข้าเซิร์ฟเวอร์ของคุณ</h3>
+                        
+                        <!-- Copy Link Button -->
+                        <div class="link-container">
+                            <input type="text" id="inviteLink" class="invite-link" readonly value="https://discord.com/oauth2/authorize?client_id=1515575576323424377&permissions=2048&scope=bot">
+                            <button class="copy-btn" onclick="copyToClipboard()">
+                                <span class="copy-icon">📋</span>
+                                <span class="copy-text">คัดลอก</span>
+                            </button>
+                        </div>
+
+                        <!-- Or Button -->
+                        <div class="or-divider">หรือ</div>
+
+                        <!-- Discord Invite Button -->
+                        <a href="https://discord.com/oauth2/authorize?client_id=1515575576323424377&permissions=2048&scope=bot" class="discord-btn" target="_blank">
+                            <span class="discord-icon">🎮</span>
+                            <span class="discord-text">เชิญบอทไปยัง Discord</span>
+                        </a>
+                    </div>
+
+                    <!-- Notification -->
+                    <div class="notification" id="notification" style="display: none;">
+                        ✓ คัดลอกลิ้งค์แล้ว!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Cards -->
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">📚</div>
+                    <h3>ข้อมูล</h3>
+                    <p>ค้นหาเอกสารและคำแนะนำในการใช้บอท</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">💬</div>
+                    <h3>สนับสนุน</h3>
+                    <p>ต้องการความช่วยเหลือ? ติดต่อเราผ่าน Discord</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🌟</div>
+                    <h3>ฟีเจอร์</h3>
+                    <p>ค้นพบฟีเจอร์ที่ยอดเยี่ยมของบอท</p>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>&copy; 2025 Bangkok Support | Powered by Discord.js</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
